@@ -38,6 +38,11 @@ h1 {
   text-align: center;
 }
 h2 {
+  background-color:#ebf18f;
+  justify-self: center; 
+  outline: 0.2rem solid #ce7777;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 1.75rem;
   text-align: center;
 }
