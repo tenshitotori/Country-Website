@@ -1,0 +1,391 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+body {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 7rem;
+  position: relative;
+  font-family: "Urbanist", "Playfair";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+  min-height: 100vh;
+  color: #000000;
+  background-color: #ffffff;
+}
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+h3 {
+  font-style: italic;
+  font-weight: normal;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+h5,
+h6 
+  
+a {
+  outline: none;
+}
+
+/* elemsnts */
+main
+
+figure
+
+figcaption
+
+table
+
+blockquote
+
+/* links */
+
+.site-navigation ul, a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #78b5d8;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  outline: 0.2rem solid #ce7777;
+}
+.discover-wrapper a {
+  padding: 0;
+  outline: none;
+}
+.site-navigation a, ul:visited {
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  color: #ce7777;
+  background-color: #b0cee2;
+  transition: 0.5s;
+}
+
+/* components */
+
+
+/* header */
+.site-header img {
+  margin-top: 0;
+  width: 9rem;
+  height: 4rem;
+}
+
+.site-header {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
+.nav-menu {
+  position: fixed;
+  bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+/* all.html's */
+@media (min-width: 48rem) {
+  .nav-menu {
+    top: 0;
+    list-style: none;
+    margin: 0;
+    row-gap: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  
+  .site-header img {
+    margin-top: 0;
+    width: 9rem;
+    height: 4rem;
+  }
+  
+  .site-header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* z-index: 10; */
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+  }
+
+  .site-navigation a, ul:visited {
+    text-decoration: none;
+  }
+  
+  .site-navigation ul {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    list-style: none;
+    padding: 0;
+    margin-right: 2rem;
+  }
+
+
+
+  /* index.html */
+  figcaption {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    color: #f1eeb7;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  } 
+
+  .align-left {
+    float: left;
+    margin: 0.25rem 0.25rem;
+  }
+  
+  .align-right {
+    float: right;
+    margin: 0.25rem 0.25rem;
+  }
+  
+  .border-line {
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+  }
+  
+  .discover-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.75rem 10rem 0.75rem;
+  }
+
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    color: #f1eeb7;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  } 
+
+    /* destinations.html */
+  .grid-map-destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 1rem;
+  }
+  
+  .grid-map-destinations div {
+  min-width: 4rem;
+  min-height: 6rem;
+  }
+  
+  .grid-map-destinations .cefalu {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  .grid-map-destinations .siracusa {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  
+  .grid-map-destinations .taormina {
+    grid-column: 2/3;
+    grid-row: 3/3;
+  }
+
+/* art-history.html */
+  .grid-map-arthistory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 1rem;
+    }
+
+  .grid-map-arthistory div {
+    min-width: 4rem;
+    min-height: 6rem;
+    }
+  
+  .grid-map-arthistory .agrigento {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    }
+}
+
+  /* credits.html */
+  .credits p {
+    text-align: center;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  td,
+  th {
+    border: solid 0.2rem #ce7777;
+    text-align: center;
+  }
+  
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #78b5d8;
+  border-color: #ce7777;
+  color: white;
+}
+
+form {
+  max-width: 32rem;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background: #b0cee2;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 1rem;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #78b5d8;
+  border: 3px solid #ce7777;
+  color: rgb(0, 0, 0);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input textarea:focus {
+  border-color: #ebf18f;
+}
+
+textarea:focus {
+  border-color: #ebf18f;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+fieldset:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+input[type="submit"] {
+  padding: 19px 39px 18px 39px;
+  color: #ffffff;
+  background-color: #78b5d8;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ce7777;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+.quote {
+  text-align: center;
+}
+
+
+/* footer */
+.site-footer {
+  text-align: center;
+}
