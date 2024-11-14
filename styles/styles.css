@@ -347,13 +347,13 @@ input[type="text"],
 input[type="email"],
 textarea {
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   height: auto;
   margin-bottom: 1rem;
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #78b5d8;
+  background: transparent;
   border: 3px solid #ce7777;
   color: rgb(0, 0, 0);
 }
@@ -362,6 +362,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input textarea:focus {
   border-color: #ebf18f;
+  background-color: #78b5d8;
 }
 
 textarea:focus {
